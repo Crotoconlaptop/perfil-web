@@ -1,10 +1,15 @@
 /*barra de navegacion*/
 .navbar {
     padding: 2rem;
-    background-color: black;
+    background-color: #333333;
 }
 .nav-link {
     color: #FFA500;
+}
+
+.nav-logo {
+    width: 100px;
+    height: 100px;
 }
 .navbar-collapse {
     align-items: center;
@@ -35,6 +40,9 @@ h1 {
     padding: 15px 0;
     font-family: 'Chakra Petch', sans-serif;
 }
+.hablemos {
+    color: white;
+}
 .seccion-descripcion {
     font-size: 1.2rem;
     color: #FFA500;
@@ -42,7 +50,7 @@ h1 {
 .seccion-texto {
     font-size: 1.2rem;
 }
-.btn-info {
+.btn-success {
     font-size: 1.1rem;
     margin: 20px;
     font-weight: bold;
@@ -78,6 +86,7 @@ h1 {
     height: 450px;
     border: 5px solid black;
 }
+
 /*sobre mi*/
 .sobre-mi {
     height: 500px;
@@ -101,8 +110,8 @@ h1 {
     transition: all 0.2s ease-in;
 }
 .experiencia .columna:hover {
-    color: white;
-    background-color: #1b1b32;
+    color: black;
+    background-color: #00FF00;
 }
 .experiencia i {
     font-size: 2.5rem;
@@ -135,6 +144,7 @@ h1 {
     border-radius: 10px;
     display: block;
     transition: all 0.2s ease;
+    object-fit: cover;
 }
 .proyectos-contenedor {
     padding-top: 60px;
@@ -156,9 +166,10 @@ h1 {
 }
 .proyecto {
     position: relative;
+    border: 3px solid #00FF00;
+    border-radius: 10px;
 }
 .proyecto:hover img {
-    width: 20%;
     opacity: 0.2;
 }
 .proyecto:hover .overlay {
@@ -168,7 +179,7 @@ h1 {
     display: flex;
 }
 .overlay i {
-    color: black;
+    color: #FFA500;
     font-size: 60px;
     margin: 10px;
 }
@@ -179,6 +190,8 @@ h1 {
    padding: 30px;
 }
 .articulos .card {
+    color: #FFA500;
+    background-color: #333333;
     width: 80%;
     max-width: 600px;
     margin: 20px;
@@ -186,6 +199,11 @@ h1 {
 .articulos .card-header {
     font-weight: bold;
 }
+.list-group-item {
+    background-color: #333333;
+    color: #FFA500;
+}
+
 /*testimonios*/
 .testimonios {
     padding: 40px 40px 80px 40px;
@@ -326,16 +344,19 @@ footer {
     .overlay i {
         font-size: 40px;
     }
+
 }
 @media screen and (max-width: 767px) {
     .navbar-brand {
         display: none;
     }
+
 }
 @media screen and (min-width: 700px) {
     .hero-inferior-imagen {
         max-width: 600px;
     }
+
 }
 @media screen and (max-width: 800px) {
     .testimonio-imagen {
@@ -345,4 +366,5 @@ footer {
     .testimonio-texto {
         font-size: 18px;
     }
+
 }
