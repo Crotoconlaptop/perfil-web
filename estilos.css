@@ -158,6 +158,7 @@ h1 {
     position: relative;
 }
 .proyecto:hover img {
+    width: 20%;
     opacity: 0.2;
 }
 .proyecto:hover .overlay {
