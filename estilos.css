@@ -165,6 +165,7 @@ h1 {
     margin-bottom: 0;
 }
 .proyecto {
+    margin: 10px;
     position: relative;
     border: 3px solid #00FF00;
     border-radius: 10px;
