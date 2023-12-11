@@ -1,348 +1,213 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-       <!--metadatos-->
-       <meta charset="utf-8">
-       <meta name="author" content="Oscar Gomez Giordano">
-       <meta name="description" content="Portafolio de desarrollo">
-       <meta name="keywords" content="HTML, CSS, Javascript, React">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <!--titulo-->
-       <title>Oscar Gomez Giordano | Front-End Developer</title>
-       <!--favicon-->
-       <link rel="icon" type="image/x-icon" href="imagenes/video-game.png"> 
-       <!--bootstrap-->
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-       <!--iconos bootstrap-->
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-       <!--css-->
-       <link href="estilos.css" rel="stylesheet">
-       <!--google fonts-->
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=DM+Serif+Display&family=Montserrat&display=swap" rel="stylesheet">
-    </head>
-    <body>
-    <!--barra de navegacion-->
-     <nav class="navbar navbar-expand-md navbar-dark">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbar-toggler">
-                <a class="navbar-brand" href="#">
-                   <img class="nav-logo" src="imagenes/D.png"  alt="Logo de la pagina Web"> 
-                </a>
-                <ul class="navbar-nav d-flex justify-content-center aling-items-center">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#sobre-mi">About me</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#proyectos-recientes">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#testimonios">Testimonials</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-     </nav>
-    <!--seccion hero-->    
-    <section class="hero align-items-stretch">
-      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-        <img class="hero-imagen-desarrollador" src="imagenes/Imagen de WhatsApp 2022-12-10 a las 18.51.52.jpg" alt="foto de oscar">
-        <h1>Hello, I'm Oscar Gomez Giordano</h1>
-        <h2>I am a web development student, I am a bartender and I play video games.</h2>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OGG Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/19b81e7089.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="container">
+    <img src="images/O1.png" class="logo" alt="logo">
+    <ul id="sidemenu">
+      <li><a href="#header">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+    </ul>
+    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+  </nav>
+  <header id="header">
+    <div class="container">
+      <div class="header-text">
+        <p class="text-con-fondo-oscuro">Frontend Developer</p>
+        <h1 class="text-con-fondo-oscuro">Hi, I'm <span>Oscar</span><br>Gomez Giordano</h1>
       </div>
-      <div class="hero-inferior">
-        <img class="hero-inferior-imagen img-fluid" src="https://i.pinimg.com/1200x/2f/47/f0/2f47f03230e46b99969a42215830e803.jpg" alt="gamer">
-
-      </div>
-    </section>
-    <!--sobre mi-->
-    <section id="sobre-mi" class="sobre-mi seccion-oscura">
-      <div class="contenedor">
-        <h2 class="seccion-titulo">Meet Oscar Gomez Giordano</h2>
-        <p class="seccion-texto">Hello, my name is Oscar, at the moment I am trying to become a fullstack developer, I am also a bartender with several years of experience.
-          </p>
-      </div>
-    </section>
-    <!--experiencia-->
-    <section class="experiencia seccion-clara">
-      <div class="container text-center">
-        <div class="row">
-          <!--desarrollo web-->
-          <div class="columna col-12 col-md-4">
-            <i class="bi bi-laptop"></i>
-            <p class="experiencia-titulo">Web development</p>
-            <p>At the moment, I'm fine-tuning my React skills.
-            </p>
-            <div class="badges-contenedor">
-              <span class="badge text-bg-primary">HTML</span>
-              <span class="badge text-bg-primary">CSS</span>
-              <span class="badge text-bg-primary">JavaScript</span>
-            </div>
-          </div>
-          <!--articulos-->
-          <div class="columna col-12 col-md-4">
-            <i class="bi bi-controller"></i>
-            <p class="experiencia-titulo">Unreal Engine</p>
-            <p>In my free time I try to make a video game as a hobby. 
-            </p>
-            <div class="badges-contenedor">
-              <span class="badge text-bg-primary">Guia Allard</span>
-              <span class="badge text-bg-primary">Game Desing</span>
-              <span class="badge text-bg-primary">Blueprint</span>
-            </div>
-          </div>
-          <!--estudiante-->
-          <div class="columna col-12 col-md-4">
-            <i class="bi bi-book-fill"></i>
-            <p class="experiencia-titulo">Education</p>
-            <p>I learn by myself by watching tutorials, reading blogs and taking courses.
-            </p>
-            <div class="badges-contenedor">
-              <span class="badge text-bg-primary">Autodidact</span>
-              <span class="badge text-bg-primary">Perseverance</span>
-              <span class="badge text-bg-primary">FreeCodeCamp</span>
-              <span class="badge text-bg-primary">Argentina programa 4.0</span>
-           </div>
-          </div>
-          </div>
-        </div>
+    </div>
+  </header>
   
-    </section>
-    <!--proyectos-->
-    <section id="proyectos-recientes" class="proyectos-recientes seccion-clara d-flex flex-column">
-      <h2 class="seccion-titulo texto-negro">My projects</h2>
-      <h3 class="seccion-descripcion">These are some projects I've created recently...</h3>
-      <!--galeria de proyectos-->
-      <div class="container text-center proyectos-contenedor">
-        <div class="row">
-          
-          <!--proyecto1-->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.rsc.org.uk%2Fsitefinity%2Fimages%2Fcatering%2Fsocial-images%2Fcocktails-in-the-rooftop-restaurant-bar.tmb-gal-1340.jpg%3Fsfvrsn%3D1dea0321_1&f=1&nofb=1&ipt=e6efa01d8808a47364b37aaa95d5da8e71a806382fa3a5820eb995063d66951f&ipo=images" alt="proyecto1">
-              <div class="overlay">
-                <p>Coctail List</p>
-                <div>
-                  
-                  </a>
-                  <a href="https://crotoconlaptop.github.io/cocktail-list/" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
-                  </a>
-                </div>
-                <div class="iconos-contenedor">
-                  <a>
 
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!--proyecto2-->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="https://d1jnk9nvznvex1.cloudfront.net/wp-content/uploads/2017/05/matterello-palermo1.jpg?x22595" alt="proyecto1">
-              <div class="overlay">
-                <p>Restaurant IL MATTERELLO</p>
-                <div>
-                  
-                  <a href="https://crotoconlaptop.github.io/IL-MATTERELLO/" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
-                  </a>
-                </div>
-                <div class="iconos-contenedor">
-                  <a>
-
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--proyecto3-->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="https://fundacioncarlosslim.org/wp-content/uploads/2021/04/programacion-orientada-objetos-java-1.jpg" alt="proyecto1">
-              <div class="overlay">
-                <p>Practice projects</p>
-                <div>
-                  
-                  </a>
-                  <a href="https://crotoconlaptop.github.io/proyectos-chicos/" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
-                  </a>
-                </div>
-                <div class="iconos-contenedor">
-                  <a>
-
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-        <button type="button" class="btn btn-success">
-          See more projects
-        <i class="bi bi-arrow-right-circle-fill"></i>
-      </button>
-      </a>
-    </section>
-    <!--articulos-->
-    <section class="articulos justify-content-start">
-      <h2 class="seccion-titulo texto-negro">freeCodeCamp Articles</h2>
-      <div class="card">
-        <div class="card-header">
-          Most recent
-        </div>
-        <ul class="list-group list-group-flush">
-          <a href="https://www.freecodecamp.org/espanol/news/que-es-programacion-manual-para-principiantes/" target="_blank" rel="noopener noreferrer">
-            <li class="list-group-item">¿Qué es programación? Manual para principiantes</li>
-          </a>
-          <a href="https://www.freecodecamp.org/espanol/news/como-crear-una-aplicacion-de-calculadora-html-desde-cero-usando-javascript/" target="_blank" rel="noopener noreferrer">
-            <li class="list-group-item">Cómo crear una aplicación de calculadora HTML desde cero usando JavaScript</li>
-          </a>
-          <a href="https://www.freecodecamp.org/espanol/news/el-dom-de-javascript-un-tutorial-practico/" target="_blank" rel="noopener noreferrer">
-            <li class="list-group-item">Cómo funciona el DOM de JavaScript: Un tutorial práctico</li>
-          </a>
-          <a href="https://www.freecodecamp.org/espanol/news/git-push-a-una-rama-remota/" target="_blank" rel="noopener noreferrer">
-            <li class="list-group-item">Git Push a una rama remota: Cómo cargar una rama local al origen</li>
-          </a>
-          <a href="https://www.freecodecamp.org/espanol/news/12-juegos-gratuitos-de-programacion-para-aprender-siendo-principiante/" target="_blank" rel="noopener noreferrer">
-            <li class="list-group-item">12 juegos gratuitos de programación para aprender siendo principiante</li>
-          </a>
-          <a href="https://www.freecodecamp.org/espanol/news/html-pagina-ancho-alto/" target="_blank" rel="noopener noreferrer">
-            <li class="list-group-item">HTML vs. Body: Cómo establecer el ancho y el alto para una página de tamaño completa</li>
-          </a>
-        </ul>
-      </div>
-      <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
-        <button type="button" class="btn btn-success">
-          See more articles
-        <i class="bi bi-arrow-right-circle-fill"></i>
-      </button>
-      </a>
-    </section>
-    <!--seccion testimonios-->
-    <section id="testimonios" class="testimonios seccion-clara">
-      <h2 class="seccion-titulo">Testimonials</h2>
-      <h3 class="seccion-descripcion">These are some testimonials from people who know me...</h3>
-      <!--carrusel-->
-      <div id="testimonio-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <img class="testimonio-imagen rounded-circle" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FopYoWjwoNFo%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=61b0190cb8a45064a24f7bf06b83a3d6d865c926cef7b844ed03ac38677441f3&ipo=images" alt="leon">
-              <p class="testimonio-texto">"Super reliable!!! We aced the mission right away, and then we went for a beer."</p>
-              <div class="testimonio-info">
-                <p class="cliente">Leon S. Kennedy</p>
-                <p class="cargo">Survivor</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <img class="testimonio-imagen rounded-circle" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpe56d.s3.amazonaws.com%2Fo_1ee7e3fe81btd5bt1f02sh11uhar.jpg&f=1&nofb=1&ipt=282cb5d2f480a258abe962d75e5c7505a9d05e4d8b2aa34d717417a001cf41c7&ipo=images" alt="scorpion">
-              <p class="testimonio-texto">"We always get together to train, and we pull off all the fatalities."</p>
-              <div class="testimonio-info">
-                <p class="cliente">Scorpion</p>
-                <p class="cargo">"Specter seeks revenge."</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <img class="testimonio-imagen rounded-circle" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages-wixmp-ed30a86b8c4ca887773594c2.wixmp.com%2Ff%2F2e22aeca-24d7-4b01-998b-799c6d3bb497%2Fd8s4x79-5162999b-b8c9-406b-83f0-a7b81a379d3b.jpg%2Fv1%2Ffill%2Fw_730%2Ch_1095%2Cq_70%2Cstrp%2Fsub_zero_by_simartworks_d8s4x79-pre.jpg%3Ftoken%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIwMCIsInBhdGgiOiJcL2ZcLzJlMjJhZWNhLTI0ZDctNGIwMS05OThiLTc5OWM2ZDNiYjQ5N1wvZDhzNHg3OS01MTYyOTk5Yi1iOGM5LTQwNmItODNmMC1hN2I4MWEzNzlkM2IuanBnIiwid2lkdGgiOiI8PTgwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.c8rLlGWtot5brSCBPTeJG0q5PZ9mCJRfEyi5Yvsggdg&f=1&nofb=1&ipt=8cd10df9ed6cdb3b19c1b65c64209da06d23f0aea7c3b5b5cf36bdf604ca549d&ipo=images" alt="sub-zero">
-              <p class="testimonio-texto">"A responsible and friendly guy, every now and then he comes with Scorpion to my temple to have sandwiches with a Cuba Libre." </p>
-              <div class="testimonio-info">
-                <p class="cliente">Sub-zero</p>
-                <p class="cargo">Grandmaster of the Lin-kuei</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <img class="testimonio-imagen rounded-circle" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fdf%2Faf%2F1d%2Fdfaf1dad91482691574a3276922b36c9.png&f=1&nofb=1&ipt=0684b0969f14ef07ac0c5b90f61075b3cd50b70e5796cc7b1c6e1dcd3cf53dee&ipo=images" alt="jill">
-              <p class="testimonio-texto">A gentleman, never let the Nemesis hit me </p>
-              <div class="testimonio-info">
-                <p class="cliente">Jill Valentine</p>
-                <p class="cargo">S.T.A.R.S Special Forces</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <img class="testimonio-imagen rounded-circle" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyt3.ggpht.com%2Fa%2FAATXAJxNI1USlJKOzJbYMCSd4DZXwJHZZsn0E45Jn3x5%3Ds900-c-k-c0xffffffff-no-rj-mo&f=1&nofb=1&ipt=44c088d057a323899ff98548d9a5487beb414a27dec50c189797f209a92e5c79&ipo=images" alt="art">
-              <p class="testimonio-texto">He made my website without any problem, since then we always go out to have fun every Halloween</p>
-              <div class="testimonio-info">
-                <p class="cliente">Art the clown</p>
-                <p class="cargo">Murderous evil entity</p>
-              </div>
-            </div>
+  <!--about-->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <div class="image-container">
+            <img src="images/gg0.jpg" alt="Imagen original" class="original-image">
+            <img src="images/giphy.gif" alt="Imagen GIF" class="gif-image">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonio-carrusel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonio-carrusel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-    <!--contacto-->
-    <section id="contacto" class="contacto seccion-oscura">
-      <div class="container">
-        <div class="container text-center rectangulo d-flex justify-content-evenly">
-          <div class="row">
-            <div class="col-12 col-md-4 seccion-titulo hablemos">
-              Let's talk!
-            </div>
-            <div class="col-12 col-md-4 descripcion">
-              Contact me to start your web development project
-            </div>
-            <div class="col-12 col-md-4">
-              <a href="mailto:ogg@live.com.ar">
-                <button type="button">
-                  Contact
-                  <i class="bi bi-envelope-at-fill"></i>
-                </button>
-              </a>
-            </div>
+        
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Without a formal computer science degree or traditional education in programming, 
+            I decided to take control of my own learning. I immersed myself in online resources, 
+            courses, tutorials, and personal projects. Every challenge I faced and every 
+            line of code I wrote brought me one step closer to my goal of becoming a 
+            proficient developer.
+          </p>
+          <p>
+            But my journey is not just about learning to code, it's also 
+            about learning to solve problems, communicate effectively, and collaborate in teams.
+            These skills are crucial in the world of software development.
+          </p>
+          <p>
+            I'm also a bartender with several years of experience, and I'm currently working at the St. Regis Hotel in Riyadh.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>HTML / CSS</span><br>A solid understanding of HTML structure and styling with CSS.</li>
+              <li><span>JAVASCRIPT</span><br>Intermediate knowledge of JavaScript and DOM manipulation.</li>
+              <li><span>REACT</span><br>Basic knowledge of React for component creation.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>None</span><br>I only have experience from the projects in my portfolio. For now, I only do tutorials.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>FreeCodeCamp</span><br>I am self-taught through the FreeCodeCamp website course, and I complete the respective tutorials.</li>
+              <li><span>The Odin Project</span><br>I am taking a course on React on The Odin Project website.</li>
+              <li><span>2023</span><br>I completed the basic programming course offered by Argentina Programa.</li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-    <!--pie de pagina-->
-    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
-      <img class="footer-logo" src="imagenes/laptop.png" alt="icono del portafolio">
-      <p class="footer-texto text-center">I stay updated and always give my best to be a good professional.<br>Hire me!!</p>
-      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-        <a href="https://www.linkedin.com/in/oscar-gomez-giordano-3000a6141" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/choctambulo/" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-instagram"></i>
-        </a>
-        <a href="https://github.com/Crotoconlaptop" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-github"></i>
-        </a>
-        <a href="mailto:ogg@live.com.ar" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-envelope-at-fill"></i>
-        </a>
-      </div>
-      <div class="derechos-de-autor">Created by Oscar Gomez Giordano (2023) &#169;</div>
-    </footer>
+    </div>
+  </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    </body>
+  <!--services-->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Desing</h2>
+          <p>
+            I can create responsive landing pages following current design standards.
+          </p>
+          <!--<a href="#">Learn more</a>-->
+        </div>
+        <div>
+          <i class="fa-solid fa-martini-glass-citrus"></i></i>
+          <h2>Bartender</h2>
+          <p>
+            I can provide a bar service, preparing cocktails from the classics to the trending ones, with excellent customer service.
+          </p>
+          <!--<a href="#">Learn more</a>-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--portfolio-->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="https://cdn2.rsc.org.uk/sitefinity/images/catering/social-images/cocktails-in-the-rooftop-restaurant-bar.tmb-gal-1340.jpg?sfvrsn=1" alt="work1">
+          <div class="layer">
+            <h3>Cocktail App</h3>
+            <p>
+              A cocktail dictionary where you can see their ingredients and how to prepare them, made in React.
+            </p>
+            <a href="https://crotoconlaptop.github.io/cocktail-list/"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="https://d1jnk9nvznvex1.cloudfront.net/wp-content/uploads/2017/05/il-matterello1.jpg" alt="work1">
+          <div class="layer">
+            <h3>IL MATTERELLO</h3>
+            <p>
+              Il Matterello's Italian restaurant landing page.
+            </p>
+            <a href="https://crotoconlaptop.github.io/IL-MATTERELLO/"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="https://burst.shopifycdn.com/photos/coding-on-laptop_1200x.progressive.jpg" alt="work1">
+          <div class="layer">
+            <h3>Small Projects</h3>
+            <p>
+              Small projects where I learned to manipulate the DOM with JavaScript.
+            </p>
+            <a href="https://crotoconlaptop.github.io/proyectos-chicos/"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a class="btn" href="#">See more</a>
+    </div>
+  </div>
+
+  <!--contact-->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i></i>gomezgiordanooscar@gmail.com</p>
+          <p><i class="fa-brands fa-whatsapp"></i>+54 9 3416150391</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/oscar-gomez-giordano/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Crotoconlaptop"><i class="fa-brands fa-github"></i></i></a>
+            <a href="https://www.instagram.com/choctambulo/"><i class="fa-brands fa-instagram"></i></i></a>
+          </div>
+          <a href="images/Oscar GomezCV.pdf" download="" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form method="POST" action="https://getform.io/f/fef96091-9868-46ce-baa3-2a786ee7d8bc">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button class="btn btn2" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © made by GG 2023</p>
+    </div>
+  </div>
+
+  <script>
+
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname) {
+      for(tablink of tablinks) {
+        tablink.classList.remove('active-link');
+      }
+      for(tabcontent of tabcontents) {
+        tabcontent.classList.remove('active-tab');
+      }
+      event.currentTarget.classList.add('active-link');
+      document.getElementById(tabname).classList.add('active-tab');
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById('sidemenu');
+
+    function openmenu() {
+      sidemenu.style.right = '0';
+    }
+    function closemenu() {
+      sidemenu.style.right = '-200px';
+    }
+  </script> 
+
+</body>
 </html>
-
